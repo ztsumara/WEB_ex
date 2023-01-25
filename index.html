@@ -6,25 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/style.css">
     <link rel="stylesheet" href="Styles/normalize.css">
-    <title>Document</title>
+    <title>Yaganov_Alihan_Albertovich_211-326_25.01.2023</title>
 </head>
 <body>
-   <header>
-
+   <header class="wrapper">
+    
+    <div class="PicktureText">
+        <img class="logo" src="SVG/logo.svg" alt="#">
+        <p class="HeaderText">Geek, freak and Moby Dick</p>
+    </div>
+    <nav class="nav">
+        <ul class="navul">
+            <li><a class="pfornav" href="#">Mission</a></li>
+            <li><a class="pfornav" href="#">Team</a></li>
+            <li><a class="pfornav" href="#">Products</a></li>
+            <li><a class="pfornav" href="#">Careers</a></li>
+            <li><a class="pfornav" href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <img class="LogoImg" src="SVG/menu.svg" alt="#">
    </header>
 
    <main>
     <section>
-        <h1></h1>
+        <divc class="wrapper">
+            <div class="Content">
+                <p class="one">We are a community of crypto enthusiasts who believe in technology, a decentralized world based on blockchain technology</p>
+                <h1 class="h1">The world as we know it is old and boring</h1>
+                <p class="one_">Blockchain and decentralization changes everything</p>
+                <img class="ImgOne" src="img/one.jpg" alt="Picture">
+                <p class="two">We believe that technology and communities are a force that can change our lives. Games for us are a way to build life differently: the ability to create new worlds, new communities, free from centralized institutions</p>
+                <p class="three">This is an opportunity to change this world and build other worlds - according to your rules. This is a breath of fresh air outside the power of states, outside politics</p>
+                <img class="ImgTwo" src="img/two.jpg" alt="Picture">
+                <p class="four">We want to create games that continue to be created and developed together with the gaming community.</p>
+            </div>
+        </div>
     </section>
-    <section>
-        <h1></h1>
+    <section class="SectionTwo">
+        <form class="formsend " name="SendVideo" method="POST" data-netlify="true">
+            <fieldset class="Video">
+                <legend>Отправь свое видео</legend>
+                <div>
+                    <label class="labelsend">
+                        Ссылка на видео: 
+                        <input class="pole" type="text" name="link" placeholder="http://site.ru" required>
+                    </label>
+                </div>
+                
+                
+                <fieldset>
+                    <legend>Тип видео:</legend>
+                    <label class="labelsend">
+                    <input  type="radio" name="TypeOfVideo" value="Private"checked>
+                    Приватное
+                    </label>
+                    <label class="labelsend">
+                    <input type="radio" name="TypeOfVideo" value="Open"required>
+                    Открытое
+                    </label>
+                </fieldset>  
+                <fieldset>
+                    <legend>Содержится ли рекламная интеграция:</legend>
+                    <label class="labelsend">
+                    <input  type="radio" name="Reclam" value="Yes"checked>
+                    Да
+                    </label>
+                    <label class="labelsend">
+                    <input type="radio" name="Reclam" value="No"required>
+                    Нет
+                    </label>
+                </fieldset>  
+                
+                
+            </fieldset>
+           
+            <div class="butsend">
+                
+                <button class="send" type="submit">Send  <img class="done" src="svg/done.svg" alt="done"></button>
+            </div>
+            <div class="butreset">
+                
+                <button class="send" type="reset">Remove form <img class="done" src="svg/Remove.svg" alt="Remove"></button>
+            </div>
+        </form>
     </section>
+    
    </main>
 
-   <footer>
+ 
 
-   </footer>
-   
 </body>
 </html>
