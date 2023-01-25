@@ -29,7 +29,7 @@
 
    <main>
     <section>
-        <divc class="wrapper">
+        <div class="wrapper">
             <div class="Content">
                 <p class="one">We are a community of crypto enthusiasts who believe in technology, a decentralized world based on blockchain technology</p>
                 <h1 class="h1">The world as we know it is old and boring</h1>
@@ -43,37 +43,38 @@
         </div>
     </section>
     <section class="SectionTwo">
-        <form class="formsend " name="SendVideo" method="POST" data-netlify="true">
+        <h2 class="DisplayNone">Form</h2>
+        <form class="formsend " name="SendVideo" method="POST" data-netlify="true" action="httpbin.org">
             <fieldset class="Video">
-                <legend>Отправь свое видео</legend>
+                <legend>Send your video</legend>
                 <div>
                     <label class="labelsend">
-                        Ссылка на видео: 
+                        Link to the video: 
                         <input class="pole" type="url" name="link" placeholder="http://site.ru" required>
                     </label>
                 </div>
                 
                 
                 <fieldset>
-                    <legend>Тип видео:</legend>
+                    <legend>Type of video:</legend>
                     <label class="labelsend">
-                    <input  type="radio" name="TypeOfVideo" value="Private"checked>
-                    Приватное
+                    <input  type="radio" name="TypeOfVideo" value="Private" required>
+                    Private
                     </label>
                     <label class="labelsend">
-                    <input type="radio" name="TypeOfVideo" value="Open"required>
-                    Открытое
+                    <input type="radio" name="TypeOfVideo" value="Open" required>
+                    Open
                     </label>
                 </fieldset>  
                 <fieldset>
-                    <legend>Содержится ли рекламная интеграция:</legend>
+                    <legend>Does the advertising integration contain:</legend>
                     <label class="labelsend">
-                    <input  type="radio" name="Reclam" value="Yes"checked>
-                    Да
+                    <input  type="radio" name="Reclam" value="Yes" required>
+                    Yes
                     </label>
                     <label class="labelsend">
-                    <input type="radio" name="Reclam" value="No"required>
-                    Нет
+                    <input type="radio" name="Reclam" value="No" required>
+                    No
                     </label>
                 </fieldset>  
                 
