@@ -231,6 +231,13 @@ legend{
 .DisplayNone{
     display: none;
 }
+.LogoImg{
+    display: initial;
+    fill: #E8532E;
+}
+::selection {
+    background-color: #c74c1b;
+}
 @media all and (min-width: 690px) {
 
     .nav{
